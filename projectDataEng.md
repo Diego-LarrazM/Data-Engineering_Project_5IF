@@ -28,13 +28,8 @@ Some of them can be done together:
 - **(A and C)**  We could do both of course!
 
 
-**REMEMBER** This is a dataeng project, it cares more for transformation, loading and storage than ML, thus B is quite valuable comapred to the otehrs in points i believe (plus it helps with performance checking with its built-in tools)
+**REMEMBER** This is a dataeng project, it cares more for transformation, loading and storage than ML, thus i believe B is quite valuable compared to the others (plus it helps with performance checking with its built-in tools)
 
 
-## Other Ideas
-
-- Market shares for prediction using LSTMs (long short term memory Neural netwokors)
-
-- [Public APIS](https://github.com/public-apis/public-apis?tab=readme-ov-file)
 
 
