@@ -13,7 +13,7 @@
 - 2 (A)
     - (A) POSSIBILITY: Grafa dashboarding for film stats
 - 2 (B) 
-    - Cloud integration (i've already done it so not that difficult)
+    - Cloud integration
 - 2 (C)
     - (C) Data cleaning, parsing, vectorization and reccomendation engine creation from groups(directors and actors, genre and keyworks, ...). <br><br>NULL data can be either eliminated or induced from other data (if follows a model) or LLM/NLP on scripts for keyword gen/extraction but i don't think that will be necessary except for videogames. <br><br>
     We would check for most common keywords and least common (and thus those with the msot information) to select what to use to compare.
@@ -36,4 +36,5 @@ Some of them can be done together:
 - Market shares for prediction using LSTMs (long short term memory Neural netwokors)
 
 - [Public APIS](https://github.com/public-apis/public-apis?tab=readme-ov-file)
+
 
