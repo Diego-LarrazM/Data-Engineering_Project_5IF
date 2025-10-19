@@ -1,10 +1,13 @@
-# DataEng 2024 Template Repository
+# DataEng 2025 INSArama Project
 
-![Insalogo](./images/logo-insa_0.png)
+![logo](./images/INSArama_Project_posterV1.png)
 
 Project [DATA Engineering](https://www.riccardotommasini.com/courses/dataeng-insa-ot/) is provided by [INSA Lyon](https://www.insa-lyon.fr/).
 
-Students: **[To be assigned]**
+Students: 
+- Doha ES-SOUFI
+- Jassir HABBA
+- Diego LARRAZ MARTIN
 
 ### Abstract
 
@@ -14,13 +17,6 @@ Students: **[To be assigned]**
 
 ## Requirements
 
-## Note for Students
-
-* Clone the created repository offline;
-* Add your name and surname into the Readme file and your teammates as collaborators
-* Complete the field above after project is approved
-* Make any changes to your repository according to the specific assignment;
-* Ensure code reproducibility and instructions on how to replicate the results;
-* Add an open-source license, e.g., Apache 2.0;
-* README is automatically converted into pdf
+## Institute logo
+![Insalogo](./images/logo-insa_0.png)
 
