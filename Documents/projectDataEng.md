@@ -20,16 +20,5 @@
     https://www.kaggle.com/code/fabiendaniel/film-recommendation-engine
 
 
-<br>
-
-Some of them can be done together:
-- **(A and B)** having a cloud stateless grafana machine on the cloud.
-- **(B and C)**  cloud stored and queried for reccomendation engine
-- **(A and C)**  We could do both of course!
-
-
-**REMEMBER** This is a dataeng project, it cares more for transformation, loading and storage than ML, thus i believe B is quite valuable compared to the others (plus it helps with performance checking with its built-in tools)
-
-
 
 
