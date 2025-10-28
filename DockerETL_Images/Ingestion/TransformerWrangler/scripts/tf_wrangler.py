@@ -3,7 +3,7 @@ from urllib.parse import quote_plus
 import ast
 import os
 
-class Extractor:
+class TfWrangler:
 
     HOST = os.environ.get("MONGO_HOST_NAME")
     PORT = int(os.environ.get("MONGO_PORT"))
@@ -21,9 +21,7 @@ class Extractor:
         if not os.path.exists(self.DATA_DIR):
             raise Exception(f"Data directory {self.DATA_DIR} does not exist.")
 
-    # def extract_IMDB_data(self, filename = "imdb_data.txt"): or whatever extension
-    # def extract_games_metacritic_data(self, filename = "games_metac_data.txt"):
-    # def extract_filmTvReviews_data(self, filename = "ftv_reviews_data.txt"):
+    # def clean_nulls(self, collection_name): ...
 
     def insert_data(self, collection_name, filename):
         collection = self.db[collection_name]
