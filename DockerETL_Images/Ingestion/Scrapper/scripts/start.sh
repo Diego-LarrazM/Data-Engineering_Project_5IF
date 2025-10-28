@@ -12,13 +12,16 @@ fi
 
 for file in $IMDB_FILES_TO_DOWNLOAD; do
     echo "[Processing $file]"
-    if [ -f "$DATA_FILE_DIRECTORY$file" ]; then
-        echo "[Skipping] $DATA_FILE_DIRECTORY$file already exists.\n"
+    if [ -f "$DATA_FILE_DIRECTORY$file.csv" ]; then
+        echo "Skipping $DATA_FILE_DIRECTORY$.csv already exists.\n"
         continue
     fi
-    wget -O "$DATA_FILE_DIRECTORY$file.tsv.gz" "$IMDB_DATA_URL$file.tsv.gz"
+    wget -q --show-progress --progress=bar:force:noscroll  -O "$DATA_FILE_DIRECTORY$file.tsv.gz" "$IMDB_DATA_URL$file.tsv.gz"
+    echo "Decompressing $DATA_FILE_DIRECTORY$file.tsv.gz to $DATA_FILE_DIRECTORY$file.csv"
     gzip -d "$DATA_FILE_DIRECTORY$file.tsv.gz"
-    mv "$DATA_FILE_DIRECTORY$file.tsv" "$DATA_FILE_DIRECTORY$file"
+    tr '\t' ',' < "$DATA_FILE_DIRECTORY$file.tsv" > "$DATA_FILE_DIRECTORY$file.csv"
+    rm "$DATA_FILE_DIRECTORY$file.tsv"
+    echo "Completed $file downloaded and decompressed to $DATA_FILE_DIRECTORY$file.csv\n"
 
 done
 
