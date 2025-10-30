@@ -1,8 +1,7 @@
-# Ignore raw data files given their large size
-data/* 
-!data/test.txt
 # Ignore logs and plugins folders
 **/logs/* 
-**/plugins/* 
+**/plugins/*
+**/venv
+**/.venv
 
 
